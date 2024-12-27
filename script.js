@@ -104,3 +104,16 @@ scrollBtn.addEventListener("click", () => {
   document.body.scrollTop = 0;
   document.documentElement.scrollTop = 0; // for Chrome, Firefox, Safari
 });
+
+// sign-up page popup
+function openPopup() {
+  document.getElementById("model-sign-up").style.display = "flex";
+}
+
+function closePopup() {
+  document.getElementById("model-sign-up").style.display = "none";
+}
+
+window.onload = function() {
+  setTimeout(openPopup, 3000); // Pop-up appears after 3 seconds
+};
